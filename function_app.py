@@ -30,6 +30,6 @@ def rag_git(req: func.HttpRequest) -> func.HttpResponse:
     except Exception as e:
         logging.error(f'failed to get  response due to : {e} ')
         return func.HttpResponse(
-             "Failed to get response",
+            json.dumps(e),
              status_code=500
         )

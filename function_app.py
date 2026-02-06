@@ -41,6 +41,7 @@ def getresponse(req: func.HttpRequest) -> func.HttpResponse:
 
     try:
         req_body = req.get_json()
+        logging.info(f'req_body is : {req_body}')
 
         user_query = req_body.get('user_query')
         logging.info(f'recieved user query : {user_query}')

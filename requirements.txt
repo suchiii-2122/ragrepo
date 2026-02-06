@@ -7,4 +7,5 @@ azure-functions
 azure.core
 azure.search
 openai
+azure-search-documents
 # python-dotenv

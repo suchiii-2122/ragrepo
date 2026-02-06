@@ -1,9 +1,11 @@
 import azure.functions as func
 import logging,json
+
+logging.info('trying to import modules')
 import os, logging
 from openai import AzureOpenAI
-from azure.search.documents import SearchClient # type: ignore
-from azure.search.documents.models import VectorizedQuery # type: ignore
+from azure.search.documents import SearchClient 
+from azure.search.documents.models import VectorizedQuery 
 from azure.core.credentials import AzureKeyCredential
 
 
